@@ -1,19 +1,19 @@
 #include "functions.h"
 #include <stdio.h>
 
-int hk_clear(struct command * c, struct hk_bit_field * bf){
+void hk_clear(struct command * c, struct hk_bit_field * bf){
     for (int i = 0; i < 32; i++) {
         if ( 0 != bf->octet[i]){
             /* Want to zero the bits specified by the command.
              * Let input bit field be I and command bit mask be M.
              * ~M AND I = desired result */
+            bf->octet[i] = ~c->hk_bit_clear.octet[i] & bf->octet[i];
         }
     }
-    return 0;
 }
 
 void print_hk_bit_field(struct hk_bit_field * bf){
-    
+
     printf("{ ");
 
     for (int i = 0; i < 32; i++){
