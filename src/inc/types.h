@@ -2,12 +2,8 @@
 #define HK_CLEAR_TYPES_H
 
 
-struct hk_bit_field_octet {
-    unsigned int value : 8;
-};
-
 struct hk_bit_field {
-    struct hk_bit_field_octet octet[32];
+    unsigned char octet[32];
 };
 
 struct command {
