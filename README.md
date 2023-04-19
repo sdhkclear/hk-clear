@@ -9,3 +9,6 @@ An interview question solution.
 
 ## Assumptions made
 - C bit-fields are acceptable. These were not used at my last employer, but are being used in the interest of time and readability.
+- The standard given in the question document is 100% correct. If this were a real work assignment I would have questions.
+- Verification of the command input has been done elsewhere.
+- The updated on-board bit field does not literally have to be the output of the function and it can instead be updated in-place.
