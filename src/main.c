@@ -11,7 +11,7 @@ int main(int argc, char *argv[], char *envp[])
     if (1 == argc)
     {
         /*If 0 args, run demo using the sample data in sample.h*/
-        printf("No options provided; showing demo instead:\n");
+        printf("No options provided; showing demo:\n");
 
         struct command ground_command = input_command_a;
         struct hk_bit_field onboard_bit_field = hk_bit_field_1;
