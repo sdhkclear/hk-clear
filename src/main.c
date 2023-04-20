@@ -20,11 +20,11 @@ int main(int argc, char *argv[], char *envp[])
             switch (opt)
             {
             case 'c': /* Clear bit field */
-                printf("Given File: %s for clear bitfield\n", optarg);
+                printf("Given file %s for clear bitfield\n", optarg);
                 file_count++;
                 break;
             case 'o': /* On-board bit field */
-                printf("Given File: %s for on-board bitfield\n", optarg);
+                printf("Given file %s for on-board bitfield\n", optarg);
                 file_count++;
                 break;
             case '?': /*Option not in optstring*/
@@ -33,7 +33,8 @@ int main(int argc, char *argv[], char *envp[])
             }
             if (file_count == 2)
             {
-                printf("Got both bit fields, parsing...\n", optarg);
+                printf("Action not implemented.\n");
+                return 0;
             }
         }
     }
